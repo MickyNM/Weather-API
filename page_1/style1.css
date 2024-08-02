@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("../images/sky3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 350px;
+    max-width: 1920px;
+    cursor: url(https://assets.codepen.io/210284/arrow_32a.svg), default;
+
+}
+
+.date {
+    position: relative;
+    font-size: 1em;
+}
+
+.current {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 18%;
+    height: 40%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 15px;
+}
+
+#city {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.currentTemp {
+    font-size: 3em;
+}
+
+.description {
+    font-size: 1.3em;
+    font-weight: lighter;
+    align-items: center;
+    justify-content: center;
+}
+
+.temperature {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    top: -100px;
+}
+
+.image {
+    position: relative;
+    width: 50%;
+    margin-left: 5%;
+    top: -50px;
+}
+
+.hourly-weekly {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 30px 30px 0 0;
+    font-size: 0.4em;
+    width: 100%;
+    height: 34vh;
+    background-color: rgb(255, 255, 255, 0.2);
+    border: rgba(255, 255, 255, 0.5) 0.1px solid;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.h2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: rgb(39, 112, 210) 2px solid;
+    font-size: 16px;
+}
+
+.hours {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-evenly;
+
+}
+
+.hour {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: rgba(255, 255, 255, 0.5) 1px solid;
+    border-radius: 100px;
+    height: 23vh;
+    width: 18%;
+    bottom: 10%;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.8em;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 14px 6px 6px #123;
+    gap: 2px;
+}
+
+img {
+    width: 90%;
+}
+
+#now_0 {
+    background-color: rgba(31, 43, 80, 0.6);
+}
+
+
+@media screen and (max-width: 320px) {
+    .current {
+        font-size: 0.8em;
+        height: 30%;
+    }
+
+    .temperature {
+
+        top: -10px;
+    }
+
+    img {
+        display: none;
+    }
+
+    .hourly-weekly {
+        height: 50vh;
+    }
+
+    .hour {
+        width: 70%;
+        height: 7vh;
+        margin-bottom: 6px;
+        font-size: 2.1em;
+    }
+
+    .hours {
+        flex-wrap: wrap;
+    }
+
+    .h2 {
+        padding: 10px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+
+    .current {
+        font-size: 1.2em;
+        height: 40%;
+        top: 15%;
+    }
+
+    .image {
+        width: 60%;
+        margin-left: 10%;
+    }
+
+    .hourly-weekly {
+        height: 40vh;
+    }
+
+    .hour {
+        width: 16%;
+        height: 30vh;
+        font-size: 4em;
+    }
+
+    .hours {
+        flex-wrap: wrap;
+    }
+
+    .h2 {
+        padding: 10px;
+        font-size: 3em;
+    }
+
+    img {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1920px) {
+    .main {
+        flex-direction: row;
+    }
+
+    .current {
+        font-size: 1.4em;
+        width: 80%;
+        top: 50px;
+        gap: 30px;
+    }
+
+    .temperature {
+
+        flex-direction: column;
+        font-size: 1.5em;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .description {
+        font-size: 1.5em;
+    }
+
+    .image {
+        width: 160%;
+        margin-left: 110%;
+    }
+
+    .hourly-weekly {
+        justify-content: space-between;
+        border-radius: 0;
+        font-size: 0.4em;
+        height: 100vh;
+        background-color: rgb(255, 255, 255, 0.3);
+    }
+
+    .h2 {
+        padding: 10px;
+        font-size: 3em;
+    }
+
+    img {
+        width: 30%;
+    }
+
+    .hours {
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .hour {
+        width: 60%;
+        height: 17vh;
+        flex-direction: row;
+        font-size: 5em;
+        bottom: 15px;
+        border-radius: 80px;
+        background-color: rgba(31, 43, 80, 0.4);
+    }
+
+    #now_0 {
+        background-color: rgba(31, 43, 80, 0.7);
+    }
+}

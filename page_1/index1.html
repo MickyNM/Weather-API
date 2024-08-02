@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>#16 - Weather api</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+<div class="main">
+    <div class="current">
+        <p class="date"></p>
+        <select id="city">
+            <option>Belgrade</option>
+            <option>Leskovac</option>
+            <option>Tokio</option>
+            <option>Sidney</option>
+            <option>Kairo</option>
+            <option>London</option>
+            <option>Moscow</option>
+            <option>Brasilia</option>
+            <option>New York</option>
+        </select>
+
+        <p class="currentTemp"></p>
+        <p class="description"></p>
+        <div class="image"></div>
+        <div class="temperature">
+            <p class="tMin"></p>
+            <p class="tMax"></p>
+        </div>
+
+    </div>
+    <div class="hourly-weekly">
+        <div class="h2">
+            <p class="hourly">Hourly Forecast</p>
+            <p class="weekly"> Weekly Forecast</p>
+        </div>
+        <div class="hours">
+            <div class="hour" id="now_0"></div>
+            <div class="hour" id="now_1"></div>
+            <div class="hour" id="now_2"></div>
+            <div class="hour" id="now_3"></div>
+            <div class="hour" id="now_4"></div>
+        </div>
+    </div>
+</div>
+<script src="jquery.min1.js"></script>
+<script src="script1.js"></script>
+
+</body>
+</html>
